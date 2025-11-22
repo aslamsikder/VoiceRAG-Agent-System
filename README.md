@@ -108,29 +108,29 @@ The app will open in your browser at `http://localhost:8501`.
 
 ## Project Structure
 
-VoiceRAG_agent_System/
-│── .env                 # API Keys (OpenAI, etc.)
-│── config.py            # Central configuration
-│── requirements.txt     # Dependencies
-│── ingest.py            # Script to build FAISS index
-│── README.md            # Documentation
-│
-├── agent/               # Core Logic
-│   ├── __init__.py
-│   ├── rag.py           # Document Embedding & Retrieval
-│   ├── stt.py           # Speech-to-Text (Hybrid)
-│   ├── tools.py         # Dynamic Function Definitions
-│   ├── llm.py           # LLM & Function Calling Logic
-│   └── pipeline.py      # Main Orchestrator
-│
-├── api/                 # FastAPI Backend
-│   └── main.py          # API Endpoints
-|
-├── data/                # save your document here (you can add as much as you want)
-│   └── Attention.pdf    # (Example file)
-│
-└── frontend/            # Streamlit UI
-    └── app.py           # Chat Interface
+VoiceRAG_agent_System/    
+│── .env                 # API Keys (OpenAI, etc.)    
+│── config.py            # Central configuration    
+│── requirements.txt     # Dependencies    
+│── ingest.py            # Script to build FAISS index    
+│── README.md            # Documentation    
+│    
+├── agent/               # Core Logic    
+│   ├── __init__.py    
+│   ├── rag.py           # Document Embedding & Retrieval    
+│   ├── stt.py           # Speech-to-Text (Hybrid)    
+│   ├── tools.py         # Dynamic Function Definitions    
+│   ├── llm.py           # LLM & Function Calling Logic    
+│   └── pipeline.py      # Main Orchestrator    
+│    
+├── api/                 # FastAPI Backend    
+│   └── main.py          # API Endpoints    
+|    
+├── data/                # save your document here (you can add as much as you want)    
+│   └── Attention.pdf    # (Example file)    
+│    
+└── frontend/            # Streamlit UI    
+    └── app.py           # Chat Interface    
 
 ---
 
