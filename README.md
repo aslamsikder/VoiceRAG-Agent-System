@@ -107,7 +107,7 @@ The app will open in your browser at `http://localhost:8501`.
 ---
 
 ## Project Structure
-
+```bash
 VoiceRAG_agent_System/    
 │── .env                 # API Keys (OpenAI, etc.)    
 │── config.py            # Central configuration    
@@ -131,7 +131,7 @@ VoiceRAG_agent_System/
 │    
 └── frontend/            # Streamlit UI    
     └── app.py           # Chat Interface    
-
+```
 ---
 
 ## ✍️ Author Information    
