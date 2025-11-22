@@ -1,0 +1,62 @@
+Collecting openai-whisper
+  Downloading openai_whisper-20250625.tar.gz (803 kB)
+     ---------------------------------------- 803.2/803.2 kB 936.1 kB/s  0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting more-itertools (from openai-whisper)
+  Downloading more_itertools-10.8.0-py3-none-any.whl.metadata (39 kB)
+Collecting numba (from openai-whisper)
+  Downloading numba-0.62.1-cp311-cp311-win_amd64.whl.metadata (2.9 kB)
+Requirement already satisfied: numpy in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from openai-whisper) (1.26.4)
+Requirement already satisfied: tiktoken in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from openai-whisper) (0.12.0)
+Collecting torch (from openai-whisper)
+  Downloading torch-2.9.1-cp311-cp311-win_amd64.whl.metadata (30 kB)
+Requirement already satisfied: tqdm in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from openai-whisper) (4.67.1)
+Collecting llvmlite<0.46,>=0.45.0dev0 (from numba->openai-whisper)
+  Downloading llvmlite-0.45.1-cp311-cp311-win_amd64.whl.metadata (5.0 kB)
+Requirement already satisfied: regex>=2022.1.18 in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from tiktoken->openai-whisper) (2025.11.3)
+Requirement already satisfied: requests>=2.26.0 in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from tiktoken->openai-whisper) (2.32.5)
+Requirement already satisfied: charset_normalizer<4,>=2 in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from requests>=2.26.0->tiktoken->openai-whisper) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from requests>=2.26.0->tiktoken->openai-whisper) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from requests>=2.26.0->tiktoken->openai-whisper) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from requests>=2.26.0->tiktoken->openai-whisper) (2025.11.12)
+Collecting filelock (from torch->openai-whisper)
+  Using cached filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+Requirement already satisfied: typing-extensions>=4.10.0 in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from torch->openai-whisper) (4.15.0)
+Collecting sympy>=1.13.3 (from torch->openai-whisper)
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch->openai-whisper)
+  Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+Requirement already satisfied: jinja2 in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from torch->openai-whisper) (3.1.6)
+Collecting fsspec>=0.8.5 (from torch->openai-whisper)
+  Using cached fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch->openai-whisper)
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from jinja2->torch->openai-whisper) (3.0.3)
+Requirement already satisfied: colorama in c:\users\hp\.conda\envs\voiceagent\lib\site-packages (from tqdm->openai-whisper) (0.4.6)
+Downloading more_itertools-10.8.0-py3-none-any.whl (69 kB)
+Downloading numba-0.62.1-cp311-cp311-win_amd64.whl (2.7 MB)
+   ---------------------------------------- 2.7/2.7 MB 1.2 MB/s  0:00:02
+Downloading llvmlite-0.45.1-cp311-cp311-win_amd64.whl (38.1 MB)
+   ---------------------------------------- 38.1/38.1 MB 1.2 MB/s  0:00:32
+Downloading torch-2.9.1-cp311-cp311-win_amd64.whl (111.0 MB)
+   ---------------------------------------- 111.0/111.0 MB 1.1 MB/s  0:01:36
+Using cached fsspec-2025.10.0-py3-none-any.whl (200 kB)
+Downloading networkx-3.5-py3-none-any.whl (2.0 MB)
+   ---------------------------------------- 2.0/2.0 MB 929.8 kB/s  0:00:02
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached filelock-3.20.0-py3-none-any.whl (16 kB)
+Building wheels for collected packages: openai-whisper
+  Building wheel for openai-whisper (pyproject.toml): started
+  Building wheel for openai-whisper (pyproject.toml): finished with status 'done'
+  Created wheel for openai-whisper: filename=openai_whisper-20250625-py3-none-any.whl size=804013 sha256=bd4609630b67c6ef691572e7d8b7ffe68bab3ae71876d920d6ea91cc6ce863a5
+  Stored in directory: c:\users\hp\appdata\local\pip\cache\wheels\32\d2\9a\801b5cc5b2a1af2e280089b71c326711a682fc1d50ea29d0ed
+Successfully built openai-whisper
+Installing collected packages: mpmath, sympy, networkx, more-itertools, llvmlite, fsspec, filelock, torch, numba, openai-whisper
+
+Successfully installed filelock-3.20.0 fsspec-2025.10.0 llvmlite-0.45.1 more-itertools-10.8.0 mpmath-1.3.0 networkx-3.5 numba-0.62.1 openai-whisper-20250625 sympy-1.14.0 torch-2.9.1

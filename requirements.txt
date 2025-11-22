@@ -1,0 +1,31 @@
+# --- Core AI & LangChain Ecosystem (v0.3+ Stable) ---
+openai>=1.55.0              # Latest Python client with full GPT-4o support
+langchain>=0.3.0            # Core library (Pydantic v2 native)
+langchain-community>=0.3.0  # Community integrations (FAISS, loaders)
+langchain-openai>=0.2.0     # Specific OpenAI integration wrappers
+langchain-text-splitters>=0.3.0
+
+# --- Document Processing ---
+pypdf>=5.0.0
+
+# --- Vector Database ---
+# STRICT PIN: FAISS wheels on PyPI often crash with NumPy 2.0+ due to ABI changes.
+# We pin NumPy < 2.0.0 to ensure stability with faiss-cpu.
+faiss-cpu>=1.8.0
+numpy>=1.26.0,<2.0.0        # Critical for FAISS compatibility
+
+# --- Backend API (FastAPI) ---
+fastapi>=0.115.0            # High-performance async framework
+uvicorn[standard]>=0.32.0   # Production ASGI server with uvloop
+python-multipart>=0.0.12    # Required for file uploads (Audio/PDF)
+
+# --- Frontend (Streamlit) ---
+streamlit>=1.40.0           # Latest UI components
+
+# --- Utilities & Processing ---
+tiktoken>=0.8.0             # Fast tokenization for OpenAI models
+python-dotenv>=1.0.1        # Environment variable management
+requests>=2.32.0            # Robust HTTP client
+pydub>=0.25.1               # Audio processing (requires ffmpeg system-side)
+openai-whisper>=20231117    # For Local STT
+torch>=2.0.0                # Required for Local Whisper
